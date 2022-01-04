@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrawlSalla | Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="validationscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="buttonscript.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home.html"><img class="logo" src="Asset/logo.png"></a>
+        <div class="navbar-icon" id="nav-icons">
+            <a href="home.html" >HOME</a>
+            <a href="screenshot.html">SCREENSHOTS</a>
+            <a href="events.html">EVENTS</a>
+            <a href="character.html">CHARACTERS</a>
+            <a href="login.html">LOGIN</a>
+            <a href="register.html" class="active" >PLAY NOW</a>
+        </div>
+        <a href="#" class="icon" onclick="buttonclick()">
+            <i class="fa fa-bars fa-3x"></i>
+        </a>
+    </nav>
+    <br><br>
+     <div class="registercontent">
+        <div class="formdiv">
+            <center>
+                <h1>Register</h1>
+            </center>
+            <br><br><br>
+            <form name="regisform" action="login.html" onsubmit="return validateRegister()" method="POST">
+                <span>Full Name:</span><br>
+                <input type="text" name="fullname" id="Regisfullname" placeholder="Full Name (ex: Jordan Jay)">
+                <br>
+                <span id="errfullname" style="color: red;"></span><br>
+                <br><br>
+                <span>Gender:</span><br>
+                <input type="radio" name="Radio" id="RegisRadioM" value="Male">Male 
+                <input type="radio" name="Radio" id="RegisRadioF" value="Female">Female
+                <br>
+                <span id="errGender" style="color: red;"></span><br>
+                <br><br>
+                <span>Username:</span><br>
+                <input type="text" name="username" id="Regisusername" placeholder="Username (ex: UrLocalLeader)">
+                <br>
+                <span id="errusername" style="color: red;"></span><br>
+                <br><br>
+                <span>Email</span><br>
+                <input type="email" name="email" id="Regisemail" placeholder="Email (ex: calvin@gmail.com)">
+                <br>
+                <span id="erremail" style="color: red;"></span><br>
+                <br><br>
+                <span>Telephone</span><br>
+                <input type="tel" name="telp" id="Registelephone" placeholder="Telephone (ex: 089677353879)">
+                <br>
+                <span id="errtelp" style="color: red;"></span><br>
+                <br><br>
+                <span>Password:</span><br>
+                <input type="password" name="password" id="Regispassword" placeholder="Password">
+                <br>
+                <span id="errpassword" style="color: red;"></span><br>
+                <br><br>
+                <span>Confirm Password:</span><br>
+                <input type="password" name="confpassword" id="Regisconfirm" placeholder="Confirm Password">
+                <br>
+                <span id="errconfpass" style="color: red;"></span><br>
+                <br><br>
+                <input type="checkbox" name="Condition" id="RegisCondition" >
+                <span id="term">Term and Condition</span><br>
+                <br>
+                <span id="errCondition" style="color: red;"></span><br>
+                <br><br>
+                <span>Already have an account? </span><a href="login.html" class="regislink">Login</a>
+                <br><br><br>
+                <center><button class="submitbutton" type="submit" >Register</button></center>
+            </form>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer>	
+        <div class="first-footer">	
+                For More Information
+        </div>	
+        <div class="second-footer">	
+            <a href="https://twitter.com/Brawlhalla">
+                <img src="Asset/twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/brawlhalla/">
+                <img src="Asset/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/Brawlhalla/">
+                <img src="Asset/facebook.png" alt="facebook">
+            </a>
+        </div>
+        <div class="third-footer">	
+            <a href="https://www.twitch.tv/brawlhalla">
+                <img src="Asset/twitch.png" alt="twitch">
+            </a>
+            <a href="https://www.youtube.com/c/brawlhalla">
+                <img src="Asset/youtube.png" alt="youtube">
+            </a>
+            <a href="https://discord.com/invite/brawlhalla">
+                <img src="Asset/discord.png" alt="discord">
+            </a>
+        </div>	
+        <div class="fourth-footer">	
+                @2021 FrawlSalla. All Right Reserved.
+        </div>	
+        <div class="last-footer">	
+                Legal | Privacy Policy
+        </div>	
+</footer>
+</body>
+</html>

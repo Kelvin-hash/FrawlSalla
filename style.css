@@ -1,0 +1,590 @@
+body{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.navbar{
+	overflow: hidden;
+	position: relative;
+	background-color: #2771d6;
+	align-items: center;
+	width:100%;
+	/* justify-content:space-between; */
+}
+
+.navbar .navbar-icon{
+	display: none;
+}
+
+.navbar-icon a{
+	font-size: 30px;
+	font-weight: 400;
+	margin: 2%;
+	width: 100%;
+	text-decoration: none;
+	color: #d8d4d5;
+	font-family: oswald;
+	display: block;
+}
+
+.navbar-icon a:hover{
+	color: purple;
+}
+
+.navbar-icon a.active{
+	color: purple;
+}
+
+.logo{
+	height: 90px;
+	width: 150px;
+	margin: 10px;
+}
+
+.navbar a.icon{
+	margin-right: 2%;
+	margin-top: 2%;
+	display: block;
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.icon:hover{
+	color: skyblue;
+}
+
+
+footer{
+	text-align:center;	
+	background-color: #0d4694;	
+	color:#d8d4d4;
+	font-size: 	20px;
+	font-family: oswald;
+	padding:10px;
+}
+
+.second-footer, .third-footer{
+	margin-left: auto;
+	margin-right:auto;
+	width:15%;
+	justify-content:space-evenly;
+	align-items: center;	
+	display: flex;	
+}
+
+.second-footer a img, .third-footer a img{
+	height: 40px;
+	width:40px;
+}
+
+/*Home Page*/
+.homecontenttop{
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.slider-con{
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.slider{
+	width: 1200px;
+	height: 600px;
+	overflow: hidden;
+}
+
+.slider img{
+	width: 1200px;
+	height: 600px;
+}
+
+.slides{
+	display: flex;
+	height: 100%;
+	position: relative;
+}
+
+.slide{
+	display: none;
+}
+
+.homecontentbottom{
+	display: flex;
+	justify-content: space-around;
+}
+
+.homecontentbottom-left{
+	padding-top: 5%;
+	text-align: justify;
+	width: 50%;
+	font-weight: 190;
+	font-size: 25px;
+	font-family: oswald;
+}
+
+.img1 img, .img2 img, .img3 img{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	height: 300px;
+	width: 500px;
+}
+
+/*ScreenshotPage*/
+.screenshotcontenttop{
+	display: 	flex;
+}
+
+.screenshotcontenttop img{
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	height: 600px;	
+}
+
+.screenshotcontentbottom{
+	display: 	flex;
+	flex-wrap: wrap;
+	font-family: oswald;
+	text-align: center;
+	justify-content: space-evenly;
+	margin-bottom: 3%;
+}
+
+.screenshotcontentbottom img{
+	width: 400px;
+	height: 250px;
+}
+
+.screenshotcontentbottom img:hover{
+	opacity: 80%;
+	cursor:pointer ;
+}		
+
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	}
+}
+
+.fade{
+	opacity: 0;
+	animation :fadeIn 0.5s forwards;
+}
+
+.screenshotactive{
+	opacity: 80%;
+}
+
+/*Event Page*/
+html{
+	scroll-behavior: smooth;
+}
+.eventcontent{
+	display: flex;
+	justify-content: space-between;
+}
+
+.titlelist{
+	font-family: oswald;
+	font-size: 25px;
+}
+
+
+.left-eventcontent{
+	width: 48%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+}
+
+
+.left-eventcontent .titlelist{
+	text-align: center;
+}
+
+
+.eventlist{
+	scroll-behavior: smooth;
+	font-family: oswald;
+}
+
+.eventlist li a{
+	text-decoration: none;
+	color: black;
+}
+
+.eventlist li a:hover{
+	text-decoration: underline;
+}
+
+
+.dropdown{
+	display: none;
+}
+
+
+.right-eventcontent{
+	margin-top: 0;
+}
+
+.right-eventcontent .kungfupanda, .right-eventcontent .rayman, .right-eventcontent
+	 .shovelKnight, .right-eventcontent .wwe, .right-eventcontent .ben10,
+		.right-eventcontent .winter, .right-eventcontent .spring, 
+		.right-eventcontent .fantasy, .right-eventcontent .autumn{
+	padding-left: 35px;
+}
+
+
+.eventcategory{
+	padding-left: 10px;
+	font-family: oswald;
+	margin :0;
+	background-color: #d8d4d4;
+}
+
+.eventcategory h1{
+	margin: 0;
+}
+
+
+.bodyevent{
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.kungfupanda .eventimg  img, .rayman .eventimg  img, .shovelKnight .eventimg  img,
+	.wwe .eventimg  img, .ben10 .eventimg  img, .winter .eventimg  img, 
+	.spring .eventimg  img, .fantasy .eventimg  img, .autumn .eventimg  img{
+	width: 500px;
+	heigth: 300px;
+}
+
+.eventTitle{
+	font-family: oswald;
+}
+
+.eventdesc{
+	width: 55%;
+	font-weight: 190;
+	font-size: 20px;
+	font-family: oswald;
+	text-align: justify;
+}
+
+/*Character Page*/
+
+.Character{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.baris1{
+  margin: 3%;
+  font-size: x-large;
+  position: relative;
+}
+
+.baris1:hover{
+	cursor: pointer;
+}
+
+.overlay{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	text-align: center;
+	padding:100px 0;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: oswald;
+	font-weight: 100;
+}
+
+
+
+.overlaycontent{
+	background-color: white;
+	width: 60%;
+	padding: 2%;
+}
+
+.overlaycontent p{
+	text-align: justify;
+	font-size: 20px;
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.6);
+}
+
+.overlay .close{
+	position: absolute;
+	top:50px;
+	left: 50%; 
+	margin-left: -20px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	border:1px solid white;
+	line-height: 14px;
+	padding: 5px;
+	opacity: 0;
+}
+
+.overlay:target .close{
+	animation:slideDownfade .5s .5s forwards;
+}
+.overlay img{
+	max-height: 100%;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.overlay:target img{
+	animation: zoomDanFade 1s;
+
+}
+
+@keyframes zoomDanFade {
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100%{
+		transform: scale(1) rotateX(360deg);
+		opacity: 1;
+	}
+}
+
+@keyframes slideDownfade {
+	0%{
+		margin-top: -20px;
+		opacity: 0;
+	}
+
+	100%{
+		margin-top:0; 
+		opacity: 1;
+	}
+}
+
+.clear{
+	clear:both;
+}
+
+/*Register Page & Login Page*/
+span{
+	font-family: oswald;
+	font-size: 18px;
+	margin-left: 10%;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel]{
+	width: 80%;
+	padding: 2%;
+	background-color: #f2f2f2;
+	margin-left: 10%;
+	border: none;
+	border-bottom: 2px solid blue;
+	outline: none;
+}
+
+#RegisRadioM,#RegisCondition{
+	margin-left: 10%;
+}
+
+#term{
+	margin-left: 0%;
+}
+
+.submitbutton{
+	width: 30%;
+	font-family: oswald;
+	font-size: 18px;
+	background-color: #2771d6;
+	border: none;
+	padding: 2% 1%;
+	color: #d8d4d5;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.submitbutton:hover{
+	background-color: blue;
+	color:white;
+	cursor: pointer;
+}
+
+.formdiv{
+	background-color: #f2f2f2;
+	border: 1px solid#2771d6;
+	border-radius: 4px;
+	margin: auto;
+	width: 80%;
+	padding: 2%;
+}
+
+.regislink{
+	color: black;
+	font-size: 18px;
+}
+
+
+@media only screen and (max-width: 800px){
+
+	.navbar-icon a{
+		margin: 5%;
+	}
+
+	.navbar a.icon{
+		margin-right: 5%;
+		margin-top: 5%;
+	}
+	
+	/*Home Page*/
+	.slider{
+		width: 600px;
+		height: 300px;
+		overflow: hidden;
+	}
+
+.slider img{
+		width: 600px;
+		height: 300px;
+	}
+
+	.homecontentbottom{
+		display: block;
+	}
+
+	.homecontentbottom-right{
+		display: none;
+	}
+
+	.homecontentbottom-left{
+		margin: auto;
+		width: 90%;
+	}
+
+	/*Screenshot Page*/
+	.screenshotcontenttop img{
+		margin-top: 3%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+		height: 300px;	
+	}
+	.screenshotcontentbottom img{
+		width: 350px;
+		height: 200px;
+	}
+
+
+	/*Event Page*/
+	.bodyevent{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.left-eventcontent{
+		display: none;
+	}
+
+	.kungfupanda .eventimg  img, .rayman .eventimg  img, .shovelKnight .eventimg  img,
+		.wwe .eventimg  img, .ben10 .eventimg  img, .winter .eventimg  img, 
+		.spring .eventimg  img, .fantasy .eventimg  img, .autumn .eventimg  img{
+		width: 500px;
+		heigth: 300px;
+	}
+
+	.eventcategory{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	a.icon1:hover{
+		color: skyblue;
+	}
+
+	.dropdown .dropdownlist{
+		display: none;
+	}
+
+	.dropdown{
+		display: inherit;
+		background-color: #d8d4d5;
+	}
+
+	.dropdownlist li a{
+		color: black;
+		text-decoration: none;
+	}
+
+	.dropdownlist li a:hover{
+		text-decoration:underline; 
+	}
+
+	.eventimg{
+		display: flex;
+		justify-content: center;
+	}
+
+	.eventTitle{
+		font-family: oswald;
+	}
+
+	.eventdesc{
+		width: 90%;
+		font-weight: 190;
+		font-size: 20px;
+		font-family: oswald;
+		text-align: justify;
+	}
+
+	/*Character Page*/
+	.overlaycontent p{
+		text-align: justify;
+		font-size: 19px;
+	}
+
+/*Register Page & Login Page*/
+	span{
+		font-size: smaller;
+	}
+	form a{
+		font-size: small;
+	}
+}
